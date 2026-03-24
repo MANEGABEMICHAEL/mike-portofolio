@@ -1,0 +1,39 @@
+# Configuration du service d'envoi d'emails pour le formulaire de contact
+
+## Étape 1: Créer un compte EmailJS
+1. Allez sur https://www.emailjs.com/
+2. Créez un compte gratuit
+3. Ajoutez votre service email (Gmail, Outlook, etc.)
+
+## Étape 2: Configurer le service
+1. Dans EmailJS, créez un service email
+2. Notez le Service ID généré
+3. Configurez votre email de destination: manegabemichael5@gmail.com
+
+## Étape 3: Créer un template d'email
+1. Créez un template avec les variables suivantes:
+   - {{from_name}} : Nom de l'expéditeur
+   - {{from_email}} : Email de l'expéditeur  
+   - {{message}} : Message
+   - {{to_email}} : Votre email (manegabemichael5@gmail.com)
+   - {{reply_to}} : Email de réponse (from_email)
+
+## Étape 4: Obtenir votre User ID
+1. Allez dans Account > API Keys
+2. Copiez votre Public Key (User ID)
+
+## Étape 5: Mettre à jour le code
+Dans src/components/Contact.jsx, remplacez les valeurs suivantes:
+- service_your_service_id → votre Service ID
+- template_your_template_id → votre Template ID  
+- your_user_id → votre User ID
+
+## Fonctionnement:
+1. Quand un visiteur envoie un message → Email vous est envoyé
+2. Quand vous répondez à cet email → Réponse envoyée au visiteur
+3. Email de confirmation automatique au visiteur
+
+## Alternative: Backend personnalisé
+Si vous préférez un backend Node.js:
+npm install nodemailer express cors
+Créez un endpoint /api/contact qui gère l'envoi d'emails

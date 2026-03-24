@@ -1,9 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './styles/dark-theme.css';
 
 .section {
-  @apply px-4 lg:px-8 mx-auto max-w-6xl pb-10 lg:pb-24;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors;
 }
 
 html {
@@ -16,14 +49,6 @@ body {
 
 .gradient-text {
   @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
-}
-
-.card-hover {
-  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
-}
-
-.btn-primary {
-  @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors;
 }
 
 .btn-secondary {

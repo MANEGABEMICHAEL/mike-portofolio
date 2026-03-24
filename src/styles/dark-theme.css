@@ -1,0 +1,162 @@
+/* Dark Theme Styles */
+body {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.dark-theme {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.light-theme {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.dark-theme .bg-white {
+  background-color: #1f2937 !important;
+}
+
+.dark-theme .bg-gray-50 {
+  background-color: #111827 !important;
+}
+
+.dark-theme .bg-gray-100 {
+  background-color: #1f2937 !important;
+}
+
+.dark-theme .bg-gray-200 {
+  background-color: #374151 !important;
+}
+
+.dark-theme .bg-gray-900 {
+  background-color: #030712 !important;
+}
+
+.dark-theme .text-gray-600 {
+  color: #9ca3af !important;
+}
+
+.dark-theme .text-gray-700 {
+  color: #d1d5db !important;
+}
+
+.dark-theme .text-gray-800 {
+  color: #f3f4f6 !important;
+}
+
+.dark-theme .text-gray-900 {
+  color: #f9fafb !important;
+}
+
+.dark-theme .border-gray-300 {
+  border-color: #4b5563 !important;
+}
+
+.dark-theme .border-gray-200 {
+  border-color: #374151 !important;
+}
+
+.dark-theme .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark-theme .shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark-theme .hover\:bg-gray-50:hover {
+  background-color: #374151 !important;
+}
+
+.dark-theme .hover\:bg-gray-100:hover {
+  background-color: #1f2937 !important;
+}
+
+.dark-theme .hover\:bg-gray-300:hover {
+  background-color: #4b5563 !important;
+}
+
+.dark-theme .hover\:bg-gray-600:hover {
+  background-color: #4b5563 !important;
+}
+
+/* Sections spécifiques */
+.dark-theme #home {
+  background: linear-gradient(to bottom right, #1f2937, #111827);
+}
+
+/* Correction z-index pour le header */
+header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Assurer que le hero ne cache pas le header */
+#home {
+  position: relative;
+  z-index: 1;
+}
+
+.dark-theme #skills,
+.dark-theme #portfolio,
+.dark-theme #timeline,
+.dark-theme #blog {
+  background-color: #111827 !important;
+}
+
+.dark-theme #contact {
+  background-color: #1f2937 !important;
+}
+
+/* Cards et articles */
+.dark-theme .bg-gradient-to-br {
+  background: linear-gradient(to bottom right, #374151, #1f2937) !important;
+}
+
+.dark-theme .card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Formulaires */
+.dark-theme input,
+.dark-theme textarea {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  color: #f3f4f6 !important;
+}
+
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+.dark-theme input:focus,
+.dark-theme textarea:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Boutons */
+.dark-theme .bg-blue-600 {
+  background-color: #2563eb !important;
+}
+
+.dark-theme .bg-blue-600:hover {
+  background-color: #1d4ed8 !important;
+}
+
+.dark-theme .bg-gray-600 {
+  background-color: #4b5563 !important;
+}
+
+.dark-theme .bg-gray-600:hover {
+  background-color: #374151 !important;
+}
+
+/* Transitions fluides */
+.dark-theme * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

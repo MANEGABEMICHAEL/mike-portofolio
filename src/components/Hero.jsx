@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-indigo-100 pt-24 lg:pt-32 min-h-screen flex items-center" id="home">
+    <section className="bg-gradient-to-br from-blue-50 to-indigo-100 pt-24 lg:pt-32 min-h-screen flex items-center relative z-10" id="home">
       <div className="section">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
           <div className="text-center lg:text-left">
